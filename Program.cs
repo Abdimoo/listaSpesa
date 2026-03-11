@@ -51,6 +51,7 @@ class Program
             return;
         }
         int i=1;
+        Console.WriteLine("Ecco la lista della spesa:");
         foreach(string prodotto in lista)
         {
             Console.WriteLine($"{i}. {prodotto}");
@@ -65,6 +66,7 @@ class Program
             Console.WriteLine("La lista è vuota.");
             return;
         }
+        Console.WriteLine("Eliminazione ultimo prodotto in corso.");
         lista.RemoveAt(lista.Count-1);
         Console.WriteLine("Ultimo prodotto eliminato.");
         
@@ -77,6 +79,7 @@ class Program
             Console.WriteLine("La lista è vuota.");
             return;
         }
+        Console.WriteLine("Eliminazione tutta la lista in corso.");
         for(int i=lista.Count-1; i >= 0; i--)
         {
             lista.RemoveAt(i);
@@ -108,11 +111,9 @@ class Program
                     VisualizzaLista(listaSpesa);
                 break;
                 case 3:
-                    Console.WriteLine("Eliminazione ultimo prodotto in corso.");
                     eliminaUltimo(listaSpesa);
                 break;
                 case 4:
-                    Console.WriteLine("Eliminazione tutta la lista in corso.");
                     eliminaLista(listaSpesa);
                 break;
                 case 0:
