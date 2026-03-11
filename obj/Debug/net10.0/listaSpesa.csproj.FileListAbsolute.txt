@@ -1,0 +1,14 @@
+C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\bin\Debug\net10.0\listaSpesa.exe
+C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\bin\Debug\net10.0\listaSpesa.deps.json
+C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\bin\Debug\net10.0\listaSpesa.runtimeconfig.json
+C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\bin\Debug\net10.0\listaSpesa.dll
+C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\bin\Debug\net10.0\listaSpesa.pdb
+C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\obj\Debug\net10.0\listaSpesa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\obj\Debug\net10.0\listaSpesa.AssemblyInfoInputs.cache
+C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\obj\Debug\net10.0\listaSpesa.AssemblyInfo.cs
+C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\obj\Debug\net10.0\listaSpesa.csproj.CoreCompileInputs.cache
+C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\obj\Debug\net10.0\listaSpesa.dll
+C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\obj\Debug\net10.0\refint\listaSpesa.dll
+C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\obj\Debug\net10.0\listaSpesa.pdb
+C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\obj\Debug\net10.0\listaSpesa.genruntimeconfig.cache
+C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\obj\Debug\net10.0\ref\listaSpesa.dll
