@@ -107,7 +107,6 @@ class Program
                     AggiungiProdotto(listaSpesa);   
                 break;
                 case 2:
-                    Console.WriteLine("Ecco la lista della spesa");
                     VisualizzaLista(listaSpesa);
                 break;
                 case 3:
