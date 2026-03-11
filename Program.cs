@@ -36,17 +36,26 @@ class Program
         if (!prodotto.Equals(""))
         {
             lista.Add(prodotto);
+        } else
+        {
+            Console.Clear();
+            Console.WriteLine("Nessun prodotto è stato aggiunto");
         }
     }
 
     static void VisualizzaLista(List<String> lista)
     {
+        if (lista.Count == 0)
+        {
+            Console.WriteLine("La lista è vuota.");
+            return;
+        }
         int i=1;
         foreach(string prodotto in lista)
         {
             Console.WriteLine($"{i}. {prodotto}");
             i++;
-        }
+        }    
     }
 
     static void eliminaUltimo(List<String> lista)
@@ -54,24 +63,25 @@ class Program
         if (lista.Count == 0)
         {
             Console.WriteLine("La lista è vuota.");
-        }else{
-            lista.RemoveAt(lista.Count-1);
-            Console.WriteLine("Ultimo prodotto eliminato.");
+            return;
         }
+        lista.RemoveAt(lista.Count-1);
+        Console.WriteLine("Ultimo prodotto eliminato.");
+        
     }
 
     static void eliminaLista(List<String> lista)
     {
         if (lista.Count == 0)
         {
-            Console.WriteLine("La lista è vuota");
-        }else{
-            for(int i=lista.Count-1; i >= 0; i--)
-            {
-                lista.RemoveAt(i);
-            }
-            Console.WriteLine("Lista eliminata");
+            Console.WriteLine("La lista è vuota.");
+            return;
         }
+        for(int i=lista.Count-1; i >= 0; i--)
+        {
+            lista.RemoveAt(i);
+        }
+        Console.WriteLine("Lista eliminata");
     }
 
     static void Main(string[] args)
@@ -87,6 +97,7 @@ class Program
                 scelta=-1;
             }
             Console.Clear();
+            
             switch (scelta)
             {
                 case 1:

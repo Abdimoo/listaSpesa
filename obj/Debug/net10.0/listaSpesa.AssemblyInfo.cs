@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("listaSpesa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54505595c3576a7451fb322d8d770dcaa0060b9d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7469716601fc21dbfacbd8a901bcd0d28edaa3ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("listaSpesa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("listaSpesa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
