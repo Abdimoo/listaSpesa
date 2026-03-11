@@ -12,3 +12,4 @@ C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\obj\Debug\net10.0\refi
 C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\obj\Debug\net10.0\listaSpesa.pdb
 C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\obj\Debug\net10.0\listaSpesa.genruntimeconfig.cache
 C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\obj\Debug\net10.0\ref\listaSpesa.dll
+C:\Users\abdel\Documents\Csharp\CsharpProjects\listaSpesa\obj\Debug\net10.0\listaSpesa.sourcelink.json

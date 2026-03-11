@@ -72,13 +72,16 @@ class Program
 
     static void Main(string[] args)
     {
-        int scelta = 0;
+        int scelta = -1;
         List<String> listaSpesa = new List<String>();
         do
         {
             Console.Clear();
             Console.WriteLine("Scegliere il tipo di attività da fare:\n1. Aggiungi prodotto alla lista della spesa\n2. Visualizza la spesa\n3. Elimina l'ultimo prodotto dalla spesa\n4. Elimina tutta la lista\n0. Esci dal programma");
-            scelta = int.Parse(Console.ReadLine());
+            if (!int.TryParse(Console.ReadLine(), out scelta))
+            {
+                scelta=-1;
+            }
             Console.Clear();
             switch (scelta)
             {
