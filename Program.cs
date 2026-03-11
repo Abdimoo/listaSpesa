@@ -33,7 +33,10 @@ class Program
         Console.WriteLine("Inserire il nome del prodotto da aggiungere");
         string prodotto = Console.ReadLine() ?? "";
         //da inserire un commento nel momento in cui non si inserisce un carattere
-        lista.Add(prodotto);
+        if (!prodotto.Equals(""))
+        {
+            lista.Add(prodotto);
+        }
     }
 
     static void VisualizzaLista(List<String> lista)
