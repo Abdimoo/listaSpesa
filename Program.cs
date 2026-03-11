@@ -31,7 +31,7 @@ class Program
     static void AggiungiProdotto(List<String> lista)
     {
         Console.WriteLine("Inserire il nome del prodotto da aggiungere");
-        string prodotto = Console.ReadLine();
+        string prodotto = Console.ReadLine() ?? "";
         lista.Add(prodotto);
     }
 
