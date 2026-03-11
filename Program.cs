@@ -33,17 +33,30 @@ class Program
         Console.WriteLine("Inserire il nome del prodotto da aggiungere");
         string prodotto = Console.ReadLine() ?? "";
         //da inserire un commento nel momento in cui non si inserisce un carattere
-        lista.Add(prodotto);
+        if (!prodotto.Equals(""))
+        {
+            lista.Add(prodotto);
+        } else
+        {
+            Console.Clear();
+            Console.WriteLine("Nessun prodotto è stato aggiunto");
+        }
     }
 
     static void VisualizzaLista(List<String> lista)
     {
+        if (lista.Count == 0)
+        {
+            Console.WriteLine("La lista è vuota.");
+            return;
+        }
         int i=1;
+        Console.WriteLine("Ecco la lista della spesa:");
         foreach(string prodotto in lista)
         {
             Console.WriteLine($"{i}. {prodotto}");
             i++;
-        }
+        }    
     }
 
     static void eliminaUltimo(List<String> lista)
@@ -51,24 +64,27 @@ class Program
         if (lista.Count == 0)
         {
             Console.WriteLine("La lista è vuota.");
-        }else{
-            lista.RemoveAt(lista.Count-1);
-            Console.WriteLine("Ultimo prodotto eliminato.");
+            return;
         }
+        Console.WriteLine("Eliminazione ultimo prodotto in corso.");
+        lista.RemoveAt(lista.Count-1);
+        Console.WriteLine("Ultimo prodotto eliminato.");
+        
     }
 
     static void eliminaLista(List<String> lista)
     {
         if (lista.Count == 0)
         {
-            Console.WriteLine("La lista è vuota");
-        }else{
-            for(int i=lista.Count-1; i >= 0; i--)
-            {
-                lista.RemoveAt(i);
-            }
-            Console.WriteLine("Lista eliminata");
+            Console.WriteLine("La lista è vuota.");
+            return;
         }
+        Console.WriteLine("Eliminazione tutta la lista in corso.");
+        for(int i=lista.Count-1; i >= 0; i--)
+        {
+            lista.RemoveAt(i);
+        }
+        Console.WriteLine("Lista eliminata");
     }
 
     static void Main(string[] args)
@@ -84,21 +100,19 @@ class Program
                 scelta=-1;
             }
             Console.Clear();
+            
             switch (scelta)
             {
                 case 1:
                     AggiungiProdotto(listaSpesa);   
                 break;
                 case 2:
-                    Console.WriteLine("Ecco la lista della spesa");
                     VisualizzaLista(listaSpesa);
                 break;
                 case 3:
-                    Console.WriteLine("Eliminazione ultimo prodotto in corso.");
                     eliminaUltimo(listaSpesa);
                 break;
                 case 4:
-                    Console.WriteLine("Eliminazione tutta la lista in corso.");
                     eliminaLista(listaSpesa);
                 break;
                 case 0:
